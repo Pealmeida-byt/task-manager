@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📋 Task Manager
 
-## Getting Started
+A full-stack task management application built with modern web technologies. Create, complete, and organize your tasks with a clean, elegant interface and real-time database persistence.
 
-First, run the development server:
+🔗 **Live Demo:** [task-manager-theta-ruddy.vercel.app](https://task-manager-theta-ruddy.vercel.app)
+
+## ✨ Features
+
+- ✅ Create, complete, and delete tasks
+- 📊 Real-time progress tracking
+- 💾 Persistent storage with PostgreSQL
+- 🎨 Modern UI with glassmorphism design
+- ⚡ Fast and responsive
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js 16 (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Database:** PostgreSQL (Neon)
+- **ORM:** Prisma
+- **Deployment:** Vercel
+
+## 🚀 Getting Started
 
 ```bash
+# Clone the repository
+git clone https://github.com/Pealmeida-byt/task-manager.git
+
+# Install dependencies
+npm install
+
+# Set up your environment variables
+# Create a .env file with your DATABASE_URL
+
+# Run database migrations
+npx prisma generate
+npx prisma db push
+
+# Start the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to see the app.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📝 API Routes
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/api/tarefas` | List all tasks |
+| POST | `/api/tarefas` | Create a new task |
+| PATCH | `/api/tarefas/[id]` | Update a task |
+| DELETE | `/api/tarefas/[id]` | Delete a task |
 
-## Learn More
+## 👨‍💻 Author
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Pedro Almeida**
+- GitHub: [@Pealmeida-byt](https://github.com/Pealmeida-byt)
